@@ -1,0 +1,33 @@
+---
+import Nav from "../components/Nav.astro";
+import Card from "../components/Card.astro";
+import Main from "../components/Main.astro";
+import "../styles/global.css"
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Portfolio Astro</title>
+	</head>
+	<header>
+		<Nav/>
+	</header>
+	<body>
+		<Main />
+		<p class="mx-6 text-4xl uppercase font-extrabold mb-4">Proyectos</p>
+		<ul class="grid gap-7 grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] m-auto mx-6">
+			<Card />
+			<Card />
+			<Card />
+			<Card />
+			<Card />
+			<Card />
+			<Card />
+		</ul>
+	</body>
+</html>
