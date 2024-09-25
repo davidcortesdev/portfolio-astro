@@ -3,6 +3,8 @@ import Nav from "../components/Nav.astro";
 import Card from "../components/Card.astro";
 import Main from "../components/Main.astro";
 import "../styles/global.css"
+import AboutMe from "../components/AboutMe.astro";
+import Space from "../components/Space.astro";
 
 ---
 
@@ -18,19 +20,20 @@ import "../styles/global.css"
 		<Nav/>
 	</header>
 	<body>
-		<Main />
-		<p class="mx-6 text-4xl uppercase font-extrabold mb-4 text-center lg:text-left">
+		<Main/>
+		<Space/>
+		<AboutMe/>
+		<p class="mx-6 text-4xl uppercase font-extrabold mb-4 mt-20 text-center lg:text-left">
 			Proyectos
 		</p>
 
-		<ul class="grid gap-7 grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] m-auto mx-6">
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-			<Card />
+		<ul class="grid gap-7 grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] m-auto mx-6 mb-48">
+			<Card/>
+			<Card/>
+			<Card/>
+			<Card/>
+			<Card/>
+			<Card/>
 		</ul>
 	</body>
 </html>
