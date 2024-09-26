@@ -1,25 +1,32 @@
+---
+const {title} = Astro.props
+const {subtitle} = Astro.props
+const {description} = Astro.props
+const {imageProject} = Astro.props
+---
+
 <li class="mt-5 rounded-2xl overflow-hidden shadow-sm shadow-green-300 flex flex-col 
             transition-shadow hover:shadow-md hover:shadow-purple-400 hover:brightness-150">
     <a href="#">
-        <img src="" 
+        <img src={imageProject} 
              alt=""
              width="640"
              height="360"
              loading="lazy"
-             class="w-full h-48 object-scale-down p-3">
+             class="w-full h-full">
     </a>
     <div class="h-full p-3 bg-zinc-800 flex flex-col gap-2 text-center">
-        <h2 class="text-lg font-bold">Astro</h2>
+        <h2 class="text-lg font-bold">{title}</h2>
         <h3 class="text-zinc-400 font-semibold">
-            The web framework for content-driver websites.
+            {subtitle}
         </h3>
         <p class="text-sm px-4 pb-3">
-            Astro build fast content sites, powerful web applications, dynamic server APIs, and everything in-between.
+            {description}
         </p>
         <a href="#" class="inline-block px-4 py-2 mt-auto rounded-lg 
                   bg-gradient-to-r from-sky-500 to-purple-500 
-                  font-semibold text-center text-white transition-all hover:brightness-150">
-            Learn
+                  font-semibold text-center text-white transition-all hover:brightness-125">
+            Ver proyecto
         </a>
 
     </div>
